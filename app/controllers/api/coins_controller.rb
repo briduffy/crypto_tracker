@@ -17,6 +17,7 @@ class Api::CoinsController < ApplicationController
       render json: coin
     else
       render json: { errors: 'Coin Not Found' }, status: 422
+    end
   end
 
   def show
